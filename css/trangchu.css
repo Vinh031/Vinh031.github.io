@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+.main{
+    font-size: 16px;
+    font-family: tahoma;
+    color:black
+}
+.banner{
+    width:100%;
+    height: 400px;
+}
+.banner img{
+    width:100%;
+    height:400px;
+}
+.menu{
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    height:60px;
+    margin-top: 1px;
+}
+.menu ul li{
+    position: relative;
+}
+.menu > ul >li {
+    display: inline-block;
+}
+
+.menu > ul > li > a{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0px 90px;
+    line-height:60px;
+    color:rgb(255, 255, 255);
+    display: block;
+}
+.menu ul ul{
+    width:312.78px;
+    left:0;
+    top:100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    transition: opacity .5s;
+}
+.menu ul ul li {
+    line-height: 40px;
+    padding:0 30px;
+    border-top:1px solid rgb(241, 240, 226);
+    border-radius: 3px;
+}
+.menu ul ul li a{
+    text-transform: capitalize;
+    padding:0 70px;
+    color: rgb(255, 255, 255);
+}
+.menu ul li:hover{
+    background-color: rgb(215, 241, 239);
+    border-radius: 3px;
+    
+}
+.menu ul li:hover>a{
+    color: rgb(0, 0, 0);
+}
+
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top:100%;
+    z-index: 1;
+}
+.content{
+    width:1200px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    border-bottom:1px solid white ;
+    border-top:2px solid white ;
+    font-family: serif;
+}
+.left{
+    float: left;
+    width:298px;
+    background-color: black;
+    color: blanchedalmond;
+    border-right:1px solid white ; 
+    height:740px;   
+}
+.left h3{
+    text-transform:capitalize ;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(61, 60, 58);
+    line-height: 70px;
+    border-radius: 5px;
+}
+.left > ul > li{
+    padding-left:80px;
+    position: relative;
+    padding-top: 15px;
+}
+.left > ul > li > a {
+    display: block;
+    color:cornsilk;
+    padding:0 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 60px;
+}
+.left ul ul{
+    left:100%;
+    top:0px;
+    opacity: 0;
+    transition:  opacity .8s;
+    width:200px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    background-color: rgb(59, 59, 29);
+}
+.left ul li:hover{
+    background-color: rgb(95, 99, 102);
+}
+.left ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.left ul ul li{
+    border-top:1px solid white ;
+    padding:0 15px;
+}
+.left ul ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 0 15px;
+    text-transform: capitalize;
+    line-height: 60px;
+    display: block;
+}
+.right{
+    float: left;
+    width:900px;
+}
+.text{
+    color:rgb(199, 149, 57);
+    font-size: 30px;
+    padding:40px 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(48, 47, 45);
+}
+.sanpham{
+    width:278px;
+    padding:0 20px 10px 0px;
+    float: left;
+    position: relative;/* lop phu chu*/
+    padding-bottom:20px;
+}
+.style_text{
+    /* lop phu chu*/
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 188.91px;
+    width: 280px;
+    background: rgba(216, 11, 35, 0.4);
+/* dua chu ve giua*/
+    align-items: center;
+    justify-content: center;
+    display:flex;
+/* an chu*/
+    opacity: 0;
+    transition: opacity .5s;
+}
+.style_text button{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-transform: capitalize;
+    background-color: rgb(99, 153, 189);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sanpham:hover .style_text{
+    opacity: 1;
+    cursor: pointer;/* re chuot vao ra hinh ban tay*/
+}
+.sanpham img{
+    width:278px;
+    height:186.91px;
+    float: left;
+    border: 1px dotted white;
+}
+.thong_tinsp{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+}
+.thong_tinsp >p {
+    color:rgb(95, 209, 230);
+    padding-top:20px;
+}
+.thong_tinsp h3{
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+
+.footer{
+    width:100%;
+    background-color: black;
+    color: white;
+    padding-top: 40px ;
+    font-family: “Comic Sans MS”, cursive, sans-seri;
+}
+.back_header{
+    float:right;
+    padding-right: 111.50px;
+    display: flex;
+    align-items: center;
+}
+.back_header a{
+    padding-right: 30px;
+    color: white;
+    font-size: 15px;
+}
+.item{
+    color:white;
+}
+.chu_thich{
+    float: left;
+    padding-left: 320px;
+    padding-top:60px;
+    
+}
+.chu_thich h3{
+    padding-bottom: 30px;
+    color:rgb(240, 227, 227);
+    font-size: 25px;
+}
+.chu_thich ul{
+    padding-bottom: 70px;
+}
+.chu_thich ul li{
+    padding-top:15px;
+} 
+.chu_thich ul li a{
+    color: rgb(122, 203, 228);
+    text-transform: capitalize;
+    display: block;
+    position: relative;
+}
+.chu_thich ul li a::after{
+    content: "";
+    background-color: white;
+    height:2px;
+    bottom: 0;
+    left:0;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+.chu_thich ul li a:hover::after{
+    width:40%;
+    transform: translateX(20%);
+}
+#cam_on{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    color: turquoise;
+}
+hr{
+    color: wheat;
+}
+.clear{
+    clear: both;
+}
